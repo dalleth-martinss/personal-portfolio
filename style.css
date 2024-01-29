@@ -15,7 +15,9 @@
   --hover-color:#f67fee;
   --color-blobs:#f67fee;
   --hover-primary: #f67fee;
-  --section-bg-grey: #5b5b5b;
+  /* --section-bg-grey: #5b5b5b; */
+  --section-bg-grey: #343434;
+  --section-bg-grey-dark: #343434;
   --big-font:2.5rem;
   --normal-font:2rem;
   --neon-box-shadow:0 0 .5rem #f67fee;
@@ -281,7 +283,7 @@ a.btn:nth-child(2)::before{
   justify-content: center;
   align-items: center;
   grid-gap: 2rem;
-  background: var(--section-bg-grey);
+  background: var(--bg-color);
 }
 .about .img-about{
   text-align: center;
@@ -379,9 +381,10 @@ text-transform: uppercase;
   flex: 1 1 18rem;
   padding: 2rem 1rem 2rem;
   text-align: center;
-  background: var(--section-bg-grey);
+  background: var(--bg-color);
   transition: .4s;
   border-radius: 10px;
+  box-shadow: var(--neon-box-shadow);
 }
 .service-btn{
   width: auto;
@@ -403,17 +406,133 @@ text-transform: uppercase;
   box-shadow: var(--neon-box-shadow);
   outline: 3px solid var(--bg-color);
 }
+.service-box h3{
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.service-box p{
+  margin: 1rem 0 1.8rem 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: var(--text-color--white);
+  line-height: 1.6;
+}
 
+/* skills section =======================================================> */
+.skills{
+  background: var(--bg-color);
+}
 
+.skill-main{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap:50px;
+} 
+.skill-bar{
+  margin-bottom: 2.8rem; 
+}
+.skill-main h3{
+  margin-bottom: 2rem;
+  font-size: var(--normal-font);
+  text-align: center;
+}
+.skill-left .skill-bar .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.skill-left .skill-bar .bar{
+  width: 100%;
+  height: 10px;
+  background-color: var(--section-bg-grey-dark);
+  border-radius: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+.skill-bar .bar span{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: var(--hover-color);
+  border-radius: 25px;
+  box-shadow: var(--neon-box-shadow);
 
+}
+.skill-bar .bar .html{
+  width: 75%;
+  animation: html 2s;
+}
 
+.skill-bar .bar .css{
+  width: 52%;
+  animation: css 3s;
+}
 
+.skill-bar .bar .angular{
+  width: 30%;
+  animation: angular 4s;
+}
+.skill-bar .bar .javascript{
+  width: 40%;
+  animation: javascript 5s;
+}
+.skill-bar .bar .github{
+  width: 35%;
+  animation: github 6s;
+}
+/* skill right */
+.profissional {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box{
+  margin: 10px 0;
+  flex: 1 1 18rem;
+  position: relative;
+}
+.box .text{
+  text-align: center;
+  color: var(--text-color--white);
+  font-size: 1.5rem;
+}
+.box .text big {
+  font: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box .text small{
+  display: block;
+  font-weight: 600;
 
+}
+.circle{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--text-color--white);
+}
+.circle .points{
+  width: 2px;
+  height: 10px;
+  background-color: var(--section-bg-grey-dark);
+  position: absolute;
+  border-radius: 3px;
+  transform: rotate(calc(var(--i)*var(--rot ))) translateY(-45px);
 
-
-
-
-
+}
+.points.marked{
+  animation: glow 0.04s linear forwards;
+  animation-delay: calc(var(--i)*0.05s);
+}
 
 
 
@@ -448,6 +567,78 @@ text-transform: uppercase;
 }
 
 }
+
+@keyframes html {
+0%{
+  width: 0%;
+}
+100%{
+  width: 75%;
+}
+
+}
+@keyframes css {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 52%;
+  }
+  
+  }
+@keyframes angular {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 30%;
+}
+}
+
+@keyframes javascript {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+@keyframes github {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 35%;
+  }
+}
+
+@keyframes glow{
+0%{
+  background: var(--bg-color);
+  box-shadow: none;
+}
+100%{
+  background: var(--hover-color);
+  box-shadow: var(--neon-box-shadow);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
