@@ -38,7 +38,7 @@ let changeText = () => {
 changeText();
 setInterval(changeText, 3000);
 
-//circle skill
+//circulo das skill////////////////////////////////////////////////
 
 const circles = document.querySelectorAll('.circle');
 circles.forEach(elem => {
@@ -61,13 +61,26 @@ circles.forEach(elem => {
 //mix da seção portfolio
 var mixer = mixitup('.portfolio-gallery');
 
+//ativar menu///////////////////////////////////////////////
 
+let menuLi = document.querySelectorAll('header ul li a');
+let section = document.querySelectorAll('section');
 
+function activeMenu(){
+  let len = section.length;
+  while(--len && window.scrollY + 97 < section[len].offsetTop){}
+  menuLi.forEach(sec => sec.classList.remove("active"));
+  menuLi[len].classList.add("active");
+}
+activeMenu();
+window.addEventListener("scroll", activeMenu);
 
+// menu que gruda ///////////////////////////////////////////////
 
-
-
-
+const header =document.querySelector("header");
+window.addEventListener("scroll", function(){
+  header.classList.toggle("sticky", window.scrollY > 50)
+})
 
 
 
