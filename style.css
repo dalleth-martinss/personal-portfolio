@@ -16,7 +16,7 @@
   --color-blobs:#f67fee;
   --hover-primary: #f67fee;
   /* --section-bg-grey: #5b5b5b; */
-  --section-bg-grey: #343434;
+  --section-bg-grey: #8b8b8b;
   --section-bg-grey-dark: #343434;
   --big-font:2.5rem;
   --normal-font:2rem;
@@ -133,6 +133,7 @@ section{
 .home-content p{
   color: var(--section-bg-grey);
   line-height:1.6;
+  font-size: 1.5rem;
 }
  .info-box{
   display: inline-flex;
@@ -258,14 +259,14 @@ a.btn:nth-child(2)::before{
 }
 .img-box img{
    width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   height: auto;
   
 }
 .liquid-shape{
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 75%;
+  height: 75%;
   z-index: -1;
    top: -5%; 
    left: 10%;
@@ -534,8 +535,128 @@ text-transform: uppercase;
   animation-delay: calc(var(--i)*0.05s);
 }
 
+/* portifolio section =======================================================> */
+.filter-buttons{
+  margin: 2rem;
+  text-align: center;
 
+}
+.filter-buttons .btn{
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: .4px;
+  margin-left: 1.3rem;
+  color: var(--text-color--white);
+}
+.filter-buttons .btn:hover{
+  color: var(--hover-primary);
+}
+.portfolio-gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(220px , 1fr));
+  gap: 2.5rem;
+}
+.port-box{
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background: var(--bg-color);
+  display: flex;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  border: 2px solid var(--hover-color);
+  box-shadow: var(--neon-box-shadow);
+  
+}
+.port-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+ 
+}
+.port-img img{
+  width: 100%;
+  opacity: .5s;
+  height: 100%;
+  transition: .5s;
+}
+.port-content{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: linear-gradient(rgba(0,0,0,.2), var(--hover-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+  padding: 0 3rem;  
+}
+.port-box:hover .port-content{
+  opacity: 1;
+}
+.port-box:hover .port-img img{
+  transform: scale(1.1);
+}
+.port-content h3{
+  font-size: 2em;
+  font-weight: 600;
+}
+.port-content p{
+  font-size: 1rem;
+  margin: 5px 0 15px 0;
+}
+.port-content a{
+  background: var(--text-color--white);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--hover-color);
+  outline: 2px solid var(--text-color--white);
+}
+.port-content a i{
+  font-size: 1.8rem;
+  color: var(--bg-color);
+}
 
+/* portifolio section =======================================================> */
+.contact{
+  width: 100%;
+}
+.contact form{
+  text-align: center;
+  max-width: 50rem;
+  margin: 1rem auto;
+  margin-bottom:  3.5rem;
+ }
+ .contact form input,
+ .contact form textarea{
+
+  width: 100%;
+  color: var(--text-color--white);
+  background: var(--bg-color);
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: .8rem;
+  box-shadow: var(--neon-box-shadow);
+ }
+ .contact form textarea{
+  resize: none;
+ }
 
 
 

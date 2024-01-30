@@ -370,7 +370,7 @@
         </section>
 
 
- <!-- Skill section============================================== -->    
+ <!-- Projects section============================================== -->    
 
  <section id="portfolio" class="portfolio">
 
@@ -381,15 +381,15 @@
 
       <div class="container">
         <div class="filter-buttons">
-          <button class="btn">All</button>
-          <button class="btn">Produtos</button>
-          <button class="btn">Interações</button>
-          <button class="btn">Web App</button>
+          <button class="btn" data-filter="all">All</button>
+          <button class="btn" data-filter=".product">Produtos</button>
+          <button class="btn" data-filter=".inter">Interações</button>
+          <button class="btn" data-filter=".web">Web App</button>
         </div>
 
       <div class="portfolio-gallery">
 
-         <div class="port-box">
+         <div class="port-box mix .product">
             <div class="port-img">
                <img src="./assets/portfolio1.jpg" alt="menina no computador">
             </div>
@@ -403,7 +403,7 @@
          </div>
 
 
-         <div class="port-box">
+         <div class="port-box mix product ">
             <div class="port-img">
                <img src="./assets/portfolio2.jpg" alt="menina no computador">
             </div>
@@ -417,9 +417,9 @@
          </div>
 
 
-         <div class="port-box">
+         <div class="port-box mix inter">
             <div class="port-img">
-               <img src="./assets/portfolio3.jpg" alt="menina no computador">
+               <img src="./assets/portfolio5.jpg" alt="menina no computador">
             </div>
             <div class="port-content">
                <h3>Web Developer</h3>
@@ -430,7 +430,7 @@
             </div>
          </div>
 
-         <div class="port-box">
+         <div class="port-box mix inter">
             <div class="port-img">
                <img src="./assets/portfolio4.jpg" alt="menina no computador">
             </div>
@@ -444,9 +444,9 @@
          </div>
 
 
-         <div class="port-box">
+         <div class="port-box mix web">
             <div class="port-img">
-               <img src="./assets/portfolio5.jpg" alt="menina no computador">
+               <img src="./assets/portfolio3.jpg" alt="menina no computador">
             </div>
             <div class="port-content">
                <h3>Web Developer</h3>
@@ -458,7 +458,7 @@
          </div>
 
 
-         <div class="port-box">
+         <div class="port-box mix web">
             <div class="port-img">
                <img src="./assets/portfolio6.jpg" alt="menina no computador">
             </div>
@@ -471,19 +471,36 @@
             </div>
          </div>
 
-
-
-
-        </div>
+      </div>
 
       </div>
 
+</section>
+
+<!-- Contatos section ======================================================== -->
+
+<section id="contact" class="contact">
+  <div class="main-text">
+    <span>Qualquer dúvidas entre em contato comigo</span>
+    <h2>Contate-me</h2>
+
+    <form action="#">
+    <input type="text" placeholder="seu nome">
+    <input type="email" placeholder="seu e-mail">
+    <input type="number" placeholder="numero de telefone">
+    <textarea name="" id="" cols="30" rows="10" placeholder="Deixe sua mensagem"></textarea>
+    <div class="btn-box formBtn">
+      <button type="submit" class="btn">Enviar mensagem</button>
+    </div>
+    </form>
 
 
+</div>
+
+</section>
 
 
- </section>
-
+<script src="mixitup.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
