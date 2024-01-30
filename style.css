@@ -159,7 +159,7 @@ section{
   height: 30px;
   gap: 20px;
 }
-.btn-box a.btn{
+.btn-box .btn{
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -179,10 +179,10 @@ section{
   border: 2px solid var(--hover-primary);
 
 }
-a.btn:hover{
+.btn:hover{
   color: var(--hover-primary);
 }
-a.btn::before{
+.btn::before{
   content: " ";
   position: absolute;
   top: 0;
@@ -193,17 +193,17 @@ a.btn::before{
   z-index: -1;
   transition: .4s;
 }
-a.btn:hover::before{
+.btn:hover::before{
   width: 100%;
 }
-a.btn:nth-child(2){
+.btn:nth-child(2){
   background: var(--bg-color);
   color: var(--hover-primary);
 }
-a.btn:nth-child(2):hover{
+.btn:nth-child(2):hover{
   color: var(--bg-color);
 }
-a.btn:nth-child(2)::before{
+.btn:nth-child(2)::before{
   background: var(--hover-primary);
 }
 .social-icons{
@@ -657,7 +657,15 @@ text-transform: uppercase;
  .contact form textarea{
   resize: none;
  }
-
+ .formBtn{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+ }
+ .formBtn .btn{
+  cursor: pointer;
+  font-size: 1.2rem;
+ }
 
 
 
