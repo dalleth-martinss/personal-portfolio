@@ -15,7 +15,7 @@ let maxWordIndex = words.length - 1;
 words[currentWordIndex].style.opacity = "1";
 
 let changeText = () => {
-  let currentWord = words[currentWordIndex]; // Corrigido: use currentWord em vez de currentWordIndex
+  let currentWord = words[currentWordIndex]; 
   let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
 
   Array.from(currentWord.children).forEach((letter, i) => {
@@ -81,9 +81,3 @@ const header =document.querySelector("header");
 window.addEventListener("scroll", function(){
   header.classList.toggle("sticky", window.scrollY > 50)
 })
-
-
-
-
-
-

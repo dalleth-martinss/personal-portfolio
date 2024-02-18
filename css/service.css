@@ -1,0 +1,67 @@
+
+.main-text{
+   width: 100%;
+   text-align: center;
+   margin-bottom: 2rem;
+   color: var(--hover-color);
+ }
+ .main-text h2{
+   font-weight: 700;
+   font-size: var(--normal-font);
+ }
+ .main-text span{
+   color: var(--text-color--white);
+   font-size: .8rem;
+   font-weight: 200;
+   letter-spacing: 2px;
+ text-transform: uppercase;
+ 
+ }
+ .section-services{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   grid-gap: 2rem;
+ }
+ .section-services .service-box{
+   flex: 1 1 18rem;
+   padding: 2rem 1rem 2rem;
+   text-align: center;
+   background: var(--bg-color);
+   transition: .4s;
+   border-radius: 10px;
+   box-shadow: var(--neon-box-shadow);
+ }
+ .service-btn{
+   width: auto;
+   justify-content: center;
+ }
+ .service-box:hover{
+   transform: translateY(-.7rem);
+ }
+ .service-icon{
+   border: 2px solid var(--hover-primary);
+   padding: 2rem;
+   background: var(--bg-color);
+   display: flex;
+   align-items: center;
+   font-size: 3rem;
+   border-radius: 50%;
+   position: relative;
+   color: var(--hover-color);
+   box-shadow: var(--neon-box-shadow);
+   outline: 3px solid var(--bg-color);
+ }
+ .service-box h3{
+   margin-top: 10px;
+   font-size: 1.5rem;
+ }
+ .service-box p{
+   margin: 1rem 0 1.8rem 0;
+   font-weight: 300;
+   letter-spacing: 1px;
+   color: var(--text-color--white);
+   line-height: 1.6;
+   text-align: justify;
+ }
