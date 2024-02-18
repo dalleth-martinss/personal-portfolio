@@ -139,12 +139,13 @@ section .home{
 
 }
 .home{
-  min-height: 100vh;
+  /* min-height: 100vh; */
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
-  grid-gap: 4em;
+  margin: 15rem 0 15rem 0;
+  /* grid-gap: 4em; */
 }
 
 .home-content{
@@ -157,6 +158,9 @@ section .home{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin:  3rem;
+  
+  
 }
 .change-text{
   font-size: 1.5rem;
