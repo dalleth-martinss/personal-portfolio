@@ -1,7 +1,7 @@
 
 /* medias da seçao 01 */
 
-@media only screen and (max-width:650px){
+@media only screen and (max-width:600px){
    header{
     position: absolute;
     left: 10;
@@ -47,7 +47,7 @@
  /* medias da seçao 02 */
 
 
-@media only skills and (mix-width:650px){
+@media only skills and (mix-width:600px){
  
   .skill-main{
     display: flex;
