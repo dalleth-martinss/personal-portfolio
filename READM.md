@@ -2,6 +2,18 @@
 
 Bem-vindo ao meu Portfólio Pessoal! Este projeto foi desenvolvido para exibir uma coleção dos meus trabalhos mais recentes e destacar minhas habilidades em desenvolvimento web.
 
+## Como você pode executar esse projeto ?
+ 
+ ```
+ # Clone este repositorio
+ $ git clone linkrepo
+
+ # Acesse a pasta do projeto no seu terminal
+ $ cd portfolio-personal
+ 
+ # Abra o no seu browser
+ ```
+
 ## 👀 Visualização
 [Link para a Visualização](https://dalleth-martinss.github.io/personal-portfolio)
 
