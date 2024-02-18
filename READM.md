@@ -15,6 +15,7 @@ Bem-vindo ao meu Portfólio Pessoal! Este projeto foi desenvolvido para exibir u
  ```
 
 ## 👀 Visualização
+
 [Link para a Visualização](https://dalleth-martinss.github.io/personal-portfolio)
 
 ![MeuPortfolio](./assets/img-readme.png)
@@ -25,6 +26,7 @@ Bem-vindo ao meu Portfólio Pessoal! Este projeto foi desenvolvido para exibir u
 - <a href="#layout">Layout</a>
 - <a href="#demonstração">Demonstração</a>
 - <a href="#visualização">Visualização</a>
+- <a href="#tecnologias">Tecnologias</a>
 - <a href="#autora"> Autora</a>
 - <a href="#license"> License</a>
 
@@ -42,6 +44,12 @@ Bem-vindo ao meu Portfólio Pessoal! Este projeto foi desenvolvido para exibir u
 - [x] Minhas habilidades
 - [x] Projetos
 - [x] Contate-me
+
+## Tecnologias
+
+ 1. [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+ 2. [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+ 3. [JavaScript](https://javascript.info/)
 
 ## 👩🏻‍💻 Demonstração
 
