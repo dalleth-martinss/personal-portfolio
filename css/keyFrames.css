@@ -50,6 +50,14 @@
        width: 40%;
      }
    }
+   @keyframes java {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 30%;
+    }
+  }
    @keyframes github {
      0%{
        width: 0%;

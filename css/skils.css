@@ -4,12 +4,11 @@
    justify-content: space-around;
  }
  
- .skill-main{
-   
-   
-   /* justify-content: space-around; */
+ /* .skill-main{
      
- } 
+    justify-content: space-around;
+     
+ }  */
 
  .skill-bar{
    margin-bottom: 2.8rem; 
@@ -62,6 +61,10 @@
    width: 40%;
    animation: javascript 5s;
  }
+ .skill-bar .bar .java{
+  width: 40%;
+  animation: java 5s;
+}
  .skill-bar .bar .github{
    width: 35%;
    animation: github 6s;

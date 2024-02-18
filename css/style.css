@@ -51,7 +51,8 @@ body{
 
 header{
   position: fixed;
- 
+  left: 10;
+  right: 0;
   z-index: 1000;
   border-bottom: 1px solid transparent;
   display: flex;
@@ -59,12 +60,15 @@ header{
   justify-content: space-between;
   margin: 20px;
   width: 100%;
+  justify-content: flex-end; 
+  align-items: center;
 }
 header.sticky{
   /* background: var(--bg-color); */
   /* border-bottom: 1px solid var(--section-bg-grey-dark); */
   padding: 5px;
   margin: 5px;
+  
 }
 
 
@@ -74,6 +78,7 @@ span{
 
 .navlist{
   display: flex;
+
   
 }
 .navlist a {
@@ -81,7 +86,8 @@ span{
   font-weight: 500;
   padding: 1.0rem 2.0rem;
   font-size: 1.2rem;
-  justify-content: end;
+  
+ 
 }
 .navlist a:hover{
   color: var(--hover-primary);
@@ -96,7 +102,8 @@ span{
 }
 
 .navlist a.active{
-  color: var(--hover-color)
+  color: var(--hover-color);
+
 }
 
 
