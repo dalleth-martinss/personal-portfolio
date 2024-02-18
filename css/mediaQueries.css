@@ -2,38 +2,25 @@
 /* medias da seçao 01 */
 
 @media only screen and (max-width:600px){
-   header{
-    position: absolute;
-    left: 10;
-    right: 0;
-    z-index: 1000;
-    border-bottom: 1px solid transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px;
-    width: 100%;
-    justify-content: flex-end; 
-    align-items: center;
-    padding: 5px;
-    margin: 5px;
-   }     
-  header.sticky{
    
-    padding: 5px;
-    margin: 5px;
+  nav{
+    display: inline
+
+   }     
+  nav .sticky{
+     
+    
+  }
+  .navlist {
+    
+ }
+  .navlist a{
+   
     
   }
 
    main{
     margin: 20px;
-   }
-   
-   section{
-     padding: 2rem 5%;
-   }
-   .navlist a{
-      padding: 8px 15px;
    }
    :root{
      --big-font:2.2rem;
@@ -47,7 +34,7 @@
  /* medias da seçao 02 */
 
 
-@media only skills and (mix-width:600px){
+@media only skills and (min-width:600px){
  
   .skill-main{
     display: flex;

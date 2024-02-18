@@ -49,21 +49,16 @@ body{
   color: var(--text-color--white);
 }
 
-header{
-  position: absolute;
-  left: 10;
-  right: 0;
-  z-index: 1000;
+nav{
+  position: relative;
   border-bottom: 1px solid transparent;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 20px;
-  width: 100%;
+  margin: 2rem;
   justify-content: flex-end; 
-  align-items: center;
+  
 }
-header.sticky{
+nav .sticky{
   /* background: var(--bg-color); */
   /* border-bottom: 1px solid var(--section-bg-grey-dark); */
   padding: 5px;
@@ -80,13 +75,14 @@ span{
 
 .navlist{
   display: flex;
-
+  flex-direction: row;
+ 
   
 }
 .navlist a {
   color:var(--text-color--white);
   font-weight: 500;
-  padding: 1.0rem 2.0rem;
+  padding: 0.8rem;
   font-size: 1.2rem;
   
  

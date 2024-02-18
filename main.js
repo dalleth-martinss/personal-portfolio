@@ -63,7 +63,7 @@ var mixer = mixitup('.portfolio-gallery');
 
 //ativar menu///////////////////////////////////////////////
 
-let menuLi = document.querySelectorAll('header ul li a');
+let menuLi = document.querySelectorAll('nav ul li a');
 let section = document.querySelectorAll('section');
 
 function activeMenu(){
@@ -77,7 +77,7 @@ window.addEventListener("scroll", activeMenu);
 
 // menu que gruda ///////////////////////////////////////////////
 
-const header =document.querySelector("header");
-window.addEventListener("scroll", function(){
-  header.classList.toggle("sticky", window.scrollY > 50)
-})
+// const header =document.querySelector("nav");
+// window.addEventListener("scroll", function(){
+//   header.classList.toggle("sticky", window.scrollY > 50)
+// })
