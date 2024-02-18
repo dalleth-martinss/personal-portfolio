@@ -2,15 +2,29 @@
 /* medias da seçao 01 */
 
 @media only screen and (max-width:650px){
-   header,
-   header.sticky{
-     
+   header{
+    position: absolute;
+    left: 10;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    width: 100%;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 5px;
     margin: 5px;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     width: 100%;
-   }
+   }     
+  header.sticky{
+   
+    padding: 5px;
+    margin: 5px;
+    
+  }
+
    main{
     margin: 20px;
    }

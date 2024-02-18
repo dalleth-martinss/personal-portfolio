@@ -50,7 +50,7 @@ body{
 }
 
 header{
-  position: fixed;
+  position: absolute;
   left: 10;
   right: 0;
   z-index: 1000;
@@ -70,7 +70,9 @@ header.sticky{
   margin: 5px;
   
 }
-
+main{
+  margin: 20px;
+}
 
 span{
   color: var(--hover-primary);
