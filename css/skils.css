@@ -1,15 +1,16 @@
 
 .skills{
-   background: var(--bg-color);
+   display: flex;
+   justify-content: space-around;
  }
  
  .skill-main{
-   width: 100%;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-row-gap: 30px;
-   grid-column-gap:50px;
+   
+   
+   /* justify-content: space-around; */
+     
  } 
+
  .skill-bar{
    margin-bottom: 2.8rem; 
  }
@@ -23,6 +24,7 @@
    justify-content: space-between;
    align-items: center;
    padding: 0 10px;
+   
  }
  .skill-left .skill-bar .bar{
    width: 100%;
@@ -66,8 +68,9 @@
  }
  /* skill right */
  .profissional {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 50%;
  }
  .box{
    margin: 10px 0;
@@ -94,7 +97,7 @@
  }
  .circle{
    width: 100%;
-   height: 120px;
+   height: 15rem;
    display: flex;
    justify-content: center;
    align-items: center;

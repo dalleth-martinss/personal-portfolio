@@ -48,41 +48,40 @@ body{
   background-color: var(--bg-color);
   color: var(--text-color--white);
 }
+
 header{
   position: fixed;
-  top: 0;
-  left: 0;
+ 
   z-index: 1000;
   border-bottom: 1px solid transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 20px;
   width: 100%;
 }
 header.sticky{
   /* background: var(--bg-color); */
   /* border-bottom: 1px solid var(--section-bg-grey-dark); */
-  padding: 12px 10%;
+  padding: 5px;
+  margin: 5px;
 }
 
-.logo{
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin: 10px;
-}
+
 span{
   color: var(--hover-primary);
 }
 
 .navlist{
   display: flex;
+  
 }
 .navlist a {
   color:var(--text-color--white);
   font-weight: 500;
   padding: 1.0rem 2.0rem;
   font-size: 1.2rem;
+  justify-content: end;
 }
 .navlist a:hover{
   color: var(--hover-primary);
@@ -115,16 +114,17 @@ span{
   position: relative;
 }
 .img-box{
+  padding: 5rem ;
   text-align: center;
 }
 .img-box img{
-  width: 100%;
-  max-width: 35rem;
-  height: auto;
+  width: 300px;
+  /* max-width: 35rem; */
+  height: 300px;
   
 }
 section{
-  padding: 5.0rem 20%;
+  padding: 2rem 5%;
   display: flex;
   flex-direction: column;
 
@@ -151,6 +151,9 @@ section .home{
 .home-content h1{
   font-size: var(--big-font);
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .change-text{
   font-size: 1.5rem;
@@ -160,6 +163,8 @@ section .home{
   display: inline-flex;
   margin: 0;
   vertical-align: top;
+  font-size: 2rem;
+  
 }
 .change-text h3 .word{
   position: absolute;

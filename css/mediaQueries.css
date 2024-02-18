@@ -1,16 +1,24 @@
 
-@media(max-width:99.1rem){
+/* medias da seçao 01 */
+
+@media only screen and (max-width:650px){
    header,
    header.sticky{
-     padding: 1.5rem 5%;
+     
+    margin: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
    }
-   footer{
-     padding: 1.5rem 5%;
+   main{
+    margin: 20px;
    }
+   
    section{
-     padding: 5.0rem 5%;
+     padding: 2rem 5%;
    }
-   .nalist a{
+   .navlist a{
       padding: 8px 15px;
    }
    :root{
@@ -20,9 +28,17 @@
      --h2-font: 3rem;
    }
  }
- @media only screen and (max-width: 600px) {
-  section .home{
-      flex-direction: column-reverse;
-  }
-}
  
+
+ /* medias da seçao 02 */
+
+
+@media only skills and (mix-width:650px){
+ 
+  .skill-main{
+    display: flex;
+   flex-direction: row;
+
+  }
+ 
+}
