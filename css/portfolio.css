@@ -18,11 +18,18 @@
  .filter-buttons .btn:hover{
    color: var(--hover-primary);
  }
- .portfolio-gallery{
-  display: grid;
-  grid-template-columns: repeat(auto-fill , minmax(220px , 1fr));
+  .portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
   gap: 2.5rem;
- }
+  justify-content: space-between;
+}
+
+.portfolio-gallery > * {
+  flex: 1 1 220px;
+  max-width: calc(100% - 2.5rem);
+}
+
  .port-box{
    position: relative;
    border-radius: 15px;
