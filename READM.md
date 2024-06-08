@@ -24,7 +24,6 @@ Bem-vindo ao meu Portfólio Pessoal! Este projeto foi desenvolvido para exibir u
 
 - <a href="#funcionalidades"> Funcionalidades </a>
 - <a href="#layout">Layout</a>
-- <a href="#demonstração">Demonstração</a>
 - <a href="#visualização">Visualização</a>
 - <a href="#tecnologias">Tecnologias</a>
 - <a href="#autora"> Autora</a>
