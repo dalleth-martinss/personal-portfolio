@@ -51,10 +51,6 @@ Bem-vindo ao meu Portfólio Pessoal! Este projeto foi desenvolvido para exibir u
  2. [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
  3. [JavaScript](https://javascript.info/)
 
-## 👩🏻‍💻 Demonstração
-
-![MeuPortfolio](./assets/print-all-page.png)
-
 ## Autoura 
 E. Dálleth S. Martins
 
